@@ -1,6 +1,7 @@
 # Redimensionador de Imagens
 
 Uma aplicação simples para auxiliar no redimensionamento das imagens a serem enviadas via email.
+Utilizado pillow para trabalhar com imagens e pyinstaller para criação de um executável.
 
 ## Instalação
 
@@ -73,6 +74,13 @@ if __name__ == "__main__":
     app = RedimensionadorImagens(root)
     root.mainloop()
 ```
+
+## Criação do executável
+
+```bash
+pyinstaller --onefile --noconsole redimensionador.py
+```
+O arquivo executável ficará disponivel na pasta 'dist'
 
 ## Contribuições
 
